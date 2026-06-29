@@ -122,18 +122,6 @@ python sensorflood_segformer_bitemporal.py     # 8-channel bi-temporal
 
 ---
 
-### Chip-Split Variants (Corrected CV)
-
-Chip-level CV splitting prevents spatial leakage between tiles from the same 512×512 chip:
-
-```bash
-python sensorflood_baseline_chipsplit.py
-python sensorflood_earlyfusion_chipsplit.py
-python sensorflood_siamese_chipsplit.py
-```
-
----
-
 ## Utility Scripts
 
 ### `cv_splits.py` — Cross-Validation Splits
