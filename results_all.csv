@@ -1,8 +1,0 @@
-Variant,Architecture,Input,Fusion,F1,F2,F3,F4,F5,Mean,Std
-UNet Baseline,UNet+EffB3,5ch,—,0.5325,0.5361,0.5353,0.5148,0.5199,0.5277,0.0087
-UNet Siamese,UNet+EffB3,8ch,Late (diff),0.5858,0.6241,0.6214,0.6354,0.6331,0.62,0.0179
-UNet Early Fusion,UNet+EffB3,8ch,Early,0.9132,0.9235,0.9129,0.8975,0.905,0.9104,0.0087
-UNet Early Fusion,UNet+ResNet34,8ch,Early,0.9036,0.9113,0.9195,0.8892,0.9164,0.908,0.0108
-UNet Early Fusion,UNet+ResNet50,8ch,Early,0.9124,0.9085,0.916,0.9005,0.9096,0.9094,0.0051
-UNet Early Fusion,UNet+EffB1,8ch,Early,0.9195,0.9249,0.9229,0.9064,0.9069,0.9161,0.0079
-UNet Early Fusion,UNet+EffB2,8ch,Early,0.9133,0.9164,0.9195,0.9052,0.9104,0.913,0.0049

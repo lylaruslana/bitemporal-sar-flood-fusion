@@ -1,4 +1,0 @@
-Variant,U-Net ResNet-34,U-Net ResNet-50,U-Net EfficientNet-B1,U-Net EfficientNet-B2,U-Net EfficientNet-B3
-Baseline,—,—,—,0.4973,0.5277
-Siamese,—,—,—,—,0.62
-Early Fusion,0.908,0.9094,0.9161,0.913,0.9104

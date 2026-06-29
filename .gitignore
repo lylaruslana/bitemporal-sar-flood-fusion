@@ -27,8 +27,12 @@ new_collate_mamas.py
 probe_pipeline.py
 threshold_baseline_results.csv
 
-# Excel files (use CSV equivalents)
+# Excel files and result tables
 *.xlsx
+*.csv
+
+# Figures (generated output)
+Figures/
 
 # NumPy result arrays (intermediate)
 *.npy
