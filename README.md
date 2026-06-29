@@ -113,15 +113,6 @@ Trains Siamese U-Net + EfficientNet-B3 with `|F_dur − F_pre|` feature differen
 
 ---
 
-### SegFormer Variants (Experimental)
-
-```bash
-python sensorflood_segformer_baseline.py       # 5-channel during-event
-python sensorflood_segformer_bitemporal.py     # 8-channel bi-temporal
-```
-
----
-
 ## Utility Scripts
 
 ### `cv_splits.py` — Cross-Validation Splits
