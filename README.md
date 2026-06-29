@@ -63,27 +63,24 @@ Trains U-Net + EfficientNet-B3 on 5-channel during-event input. Saves checkpoint
 
 ---
 
-### Variant A — Bi-Temporal Early Fusion (EfficientNet-B3)
+### Variant A — Bi-Temporal Early Fusion
 
 ```bash
-python sensorflood.py
-```
-
-Trains U-Net + EfficientNet-B3 on 8-channel bi-temporal input. Saves to `Models/unet_efficientnetb3_Indonesia_bitemporal/`.
-
----
-
-### Variant A — Generic Early Fusion (any encoder)
-
-```bash
+# Reproduce paper result (EfficientNet-B3)
 python sensorflood_earlyfusion.py \
-    --encoder resnet34 \
-    --model-id unet_resnet34_Indonesia_bitemporal
+    --encoder efficientnet-b3 \
+    --model-id unet_efficientnetb3_Indonesia_bitemporal
+
+# Other encoders used in backbone sensitivity analysis
+python sensorflood_earlyfusion.py --encoder resnet34      --model-id unet_resnet34_Indonesia_bitemporal
+python sensorflood_earlyfusion.py --encoder resnet50      --model-id unet_resnet50_Indonesia_bitemporal
+python sensorflood_earlyfusion.py --encoder efficientnet-b1 --model-id unet_efficientnetb1_Indonesia_bitemporal
+python sensorflood_earlyfusion.py --encoder efficientnet-b2 --model-id unet_efficientnetb2_Indonesia_bitemporal
 ```
 
 | Argument | Description |
 |---|---|
-| `--encoder` | SMP encoder name |
+| `--encoder` | SMP encoder name (e.g. `resnet34`, `efficientnet-b3`) |
 | `--model-id` | Output folder name under `Models/` |
 
 ---
