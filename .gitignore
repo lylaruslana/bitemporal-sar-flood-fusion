@@ -1,0 +1,39 @@
+# Trained model checkpoints (too large)
+Models/
+
+# SLURM logs
+logs/
+*.out
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Paper revision folder (not part of code release)
+revision/
+
+# Internal analysis and draft files
+outcollate
+outcollate/
+paper_draft.tex
+references.bib
+audit_report.md
+CV_SPLIT_AUDIT.md
+CONTEXT_change_detection.md
+TECHNICAL_DOC.md
+new_collate_mamas.py
+probe_pipeline.py
+threshold_baseline_results.csv
+
+# Excel files (use CSV equivalents)
+*.xlsx
+
+# NumPy result arrays (intermediate)
+*.npy
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
