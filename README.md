@@ -146,7 +146,6 @@ print_split_report(dataset, folds, strategy="CHIP")
 Non-ML rule-based baseline using VV backscatter change signal:
 
 ```bash
-cd ic3ina26/
 python threshold_baseline.py
 ```
 
@@ -174,27 +173,6 @@ Generates `Figures/qualitative_comparison.png` — side-by-side SAR chips with g
 
 ---
 
-## SLURM Scripts
-
-For cluster submission (adjust `--nodelist` and paths as needed):
-
-| Script | Purpose |
-|---|---|
-| `run_slurm_baseline.sh` | Submit Baseline EffB3 job |
-| `run_slurm.sh` | Submit Variant A EffB3 job |
-| `run_slurm_siamese.sh` | Submit Variant B Siamese EffB3 job |
-| `run_slurm_backbone_ablation.sh` | Submit backbone sensitivity jobs (ResNet34/50, EffB1/B2) sequentially |
-| `run_slurm_all_segformer.sh` | Submit SegFormer baseline + bi-temporal jobs |
-| `run_slurm_baseline_effb2.sh` | Submit Baseline EffB2 job |
-
-```bash
-sbatch run_slurm_baseline.sh
-sbatch run_slurm.sh
-sbatch run_slurm_siamese.sh
-```
-
----
-
 ## Results
 
 5-fold cross-validation flood-class IoU on the Indonesian subset (SEED=2026):
@@ -205,8 +183,6 @@ sbatch run_slurm_siamese.sh
 | Variant A (Early Fusion) | EfficientNet-B1 | **0.9161** | ±0.0079 |
 | Variant A (Early Fusion) | EfficientNet-B3 | 0.9104 | ±0.0087 |
 | Variant B (Siamese) | EfficientNet-B3 | 0.6200 | ±0.0200 |
-
-Full per-fold results: [`results_all.csv`](results_all.csv) · [`results_pivot.csv`](results_pivot.csv)
 
 ---
 
