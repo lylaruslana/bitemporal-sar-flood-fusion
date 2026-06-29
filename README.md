@@ -63,21 +63,6 @@ Trains U-Net + EfficientNet-B3 on 5-channel during-event input. Saves checkpoint
 
 ---
 
-### Baseline — Generic (any encoder)
-
-```bash
-python sensorflood_baseline_generic.py \
-    --encoder efficientnet-b1 \
-    --model-id unet_efficientnetb1_Indonesia_baseline
-```
-
-| Argument | Description |
-|---|---|
-| `--encoder` | SMP encoder name (e.g. `resnet34`, `efficientnet-b1`) |
-| `--model-id` | Output folder name under `Models/` |
-
----
-
 ### Variant A — Bi-Temporal Early Fusion (EfficientNet-B3)
 
 ```bash
