@@ -2,7 +2,7 @@
 
 Code for the paper:
 **"Bi-Temporal Sentinel-1 Early Fusion for Improved SAR Flood Mapping: Extending a Single-Temporal Encoder Benchmark"**
-IC3INA 2026 — Lyla Ruslana Aini et al., BRIN
+IC3INA 2026 — Lyla Ruslana Aini, Rachmawan Atmaji Perdana, Andi Kurnianto, Yuki Istianto, Sofyan Mufti Prasetyo, Socia Prihawantoro, Abhimata Ar Rasyiid, Christian Wisnu Purnaadi, Edi Purwito Aji, Ahmad Musyafa, Tri Sampurno
 
 ---
 
@@ -165,7 +165,7 @@ Generates `Figures/qualitative_comparison.png` — side-by-side SAR chips with g
 
 ```bibtex
 @inproceedings{aini2026bitemporal,
-  author    = {Aini, Lyla Ruslana and others},
+  author    = {Aini, Lyla Ruslana and Perdana, Rachmawan Atmaji and Kurnianto, Andi and Istianto, Yuki and Prasetyo, Sofyan Mufti and Prihawantoro, Socia and Rasyiid, Abhimata Ar and Purnaadi, Christian Wisnu and Aji, Edi Purwito and Musyafa, Ahmad and Sampurno, Tri},
   title     = {Bi-Temporal Sentinel-1 Early Fusion for Improved SAR Flood Mapping:
                Extending a Single-Temporal Encoder Benchmark},
   booktitle = {Proceedings of the International Conference on Computer, Control,
